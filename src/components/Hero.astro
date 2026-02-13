@@ -65,38 +65,53 @@ const phoneLink = "tel:02045678900";
                 </p>
             </div>
 
-            <!-- Right Content - Coupon Cards -->
-            <div class="hidden lg:block space-y-6">
-                <div class="bg-white rounded-2xl p-6 shadow-2xl border-4 border-dashed border-orange-400 transform rotate-2 hover:rotate-0 transition-transform">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
-                            <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"/></svg>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg">FREE Thermal Imaging</h3>
-                            <p class="text-gray-500 text-sm">Worth £150</p>
-                        </div>
+            <!-- Right Content - Mascot & Coupon Cards -->
+            <div class="hidden lg:block">
+                <!-- Mascot Hero Image -->
+                <div class="mb-8 flex justify-center">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-orange-400 rounded-3xl blur-2xl opacity-50 animate-pulse"></div>
+                        <img
+                            src="/images/mascot.jpg"
+                            alt="MouldBlitz Superhero - Your Mould-Fighting Hero"
+                            class="relative w-64 h-64 object-cover rounded-3xl shadow-2xl border-4 border-white/20 transform hover:scale-105 transition-transform duration-300"
+                        />
                     </div>
-                    <p class="text-gray-600 mb-4">Complete moisture mapping & thermal analysis with every quote</p>
-                    <a href="sms:02045678900?&body=Hi%20MouldBlitz,%20I%20want%20the%20FREE%20thermal%20imaging%20survey%20offer!" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-3 rounded-lg transition-colors">
-                        Text to Claim
-                    </a>
                 </div>
 
-                <div class="bg-gradient-to-br from-green-500 to-green-600 rounded-2xl p-6 shadow-2xl text-white transform -rotate-1 hover:rotate-0 transition-transform">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <!-- Coupon Cards -->
+                <div class="space-y-6">
+                    <div class="bg-white rounded-2xl p-6 shadow-2xl border-4 border-dashed border-orange-400 transform rotate-2 hover:rotate-0 transition-transform">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg">FREE Thermal Imaging</h3>
+                                <p class="text-gray-500 text-sm">Worth £150</p>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="font-bold text-lg">Same-Day Quote</h3>
-                            <p class="text-green-100 text-sm">Call Before 6PM</p>
-                        </div>
+                        <p class="text-gray-600 mb-4">Complete moisture mapping & thermal analysis with every quote</p>
+                        <a href="sms:02045678900?&body=Hi%20MouldBlitz,%20I%20want%20the%20FREE%20thermal%20imaging%20survey%20offer!" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-3 rounded-lg transition-colors">
+                            Text to Claim
+                        </a>
                     </div>
-                    <p class="text-green-100 mb-4">Get your detailed quote within hours, not days</p>
-                    <a href="sms:02045678900?&body=Hi%20MouldBlitz,%20I%20need%20a%20same-day%20quote%20for%20mould%20removal!" class="block w-full bg-white text-green-600 hover:bg-gray-100 text-center font-bold py-3 rounded-lg transition-colors">
-                        Book Now
-                    </a>
+
+                    <div class="bg-gradient-to-br from-green-500 to-green-600 rounded-2xl p-6 shadow-2xl text-white transform -rotate-1 hover:rotate-0 transition-transform">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg">Same-Day Quote</h3>
+                                <p class="text-green-100 text-sm">Call Before 6PM</p>
+                            </div>
+                        </div>
+                        <p class="text-green-100 mb-4">Get your detailed quote within hours, not days</p>
+                        <a href="sms:02045678900?&body=Hi%20MouldBlitz,%20I%20need%20a%20same-day%20quote%20for%20mould%20removal!" class="block w-full bg-white text-green-600 hover:bg-gray-100 text-center font-bold py-3 rounded-lg transition-colors">
+                            Book Now
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
