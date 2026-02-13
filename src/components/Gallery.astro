@@ -1,0 +1,37 @@
+---
+const images = [
+    { title: "Thermal Imaging Survey", src: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80" },
+    { title: "Black Mould Removal", src: "https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=600&q=80" },
+    { title: "MEV Installation", src: "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80" },
+    { title: "Moisture Mapping", src: "https://images.unsplash.com/photo-1605218427368-35b089687909?w=600&q=80" },
+    { title: "HEPA Filtration Setup", src: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80" },
+    { title: "Before/After Comparison", src: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80" },
+    { title: "DPC Injection", src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" },
+    { title: "Rising Damp Treatment", src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" },
+    { title: "PIV System Installation", src: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80" }
+];
+---
+
+<section class="py-24 bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl lg:text-5xl font-black mb-4">Real Jobs. Real Results.</h2>
+            <p class="text-xl text-gray-400">We're out treating damp and mould every day. Here's proof.</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {images.map((img, index) => (
+                <div class="group relative aspect-square overflow-hidden rounded-2xl">
+                    <img 
+                        src={img.src} 
+                        alt={img.title}
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <p class="font-bold text-white">{img.title}</p>
+                    </div>
+                </div>
+            ))}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,69 @@
+---
+const services = [
+    {
+        icon: "🦠",
+        title: "Black Mould Removal",
+        description: "Toxic mould removal with HEPA filtration. Complete decontamination and prevention.",
+        features: ["Health hazard elimination", "Spore containment", "Surface treatment"],
+        image: "https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=800&q=80"
+    },
+    {
+        icon: "💧",
+        title: "Rising Damp",
+        description: "Damp-proof course installation, moisture barriers, and structural drying.",
+        features: ["DPC injection", "Salt neutralization", "Replastering"],
+        image: "https://images.unsplash.com/photo-1605218427368-35b089687909?w=800&q=80"
+    },
+    {
+        icon: "🌫️",
+        title: "Condensation",
+        description: "Ventilation upgrades, thermal bridge fixes, and humidity control systems.",
+        features: ["MEV/PIV installation", "Insulation upgrades", "Dehumidification"],
+        image: "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=80"
+    },
+    {
+        icon: "🏠",
+        title: "Penetrating Damp",
+        description: "External repairs, cavity wall treatments, and waterproofing solutions.",
+        features: ["Leak detection", "Pointing repairs", "Render treatment"],
+        image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80"
+    }
+];
+---
+
+<section id="services" class="py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-4xl lg:text-5xl font-black text-gray-900 mb-4">What We Fix</h2>
+            <p class="text-xl text-gray-600">We don't just treat symptoms — we eliminate the root cause</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            {services.map((service, index) => (
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="relative h-56 overflow-hidden">
+                        <img 
+                            src={service.image} 
+                            alt={service.title}
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 text-5xl">{service.icon}</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-blue-600 mb-3">{service.title}</h3>
+                        <p class="text-gray-600 mb-6">{service.description}</p>
+                        <ul class="space-y-2">
+                            {service.features.map(feature => (
+                                <li class="flex items-center gap-2 text-gray-700">
+                                    <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                    {feature}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+            ))}
+        </div>
+    </div>
+</section>

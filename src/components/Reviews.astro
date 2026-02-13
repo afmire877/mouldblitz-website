@@ -1,0 +1,75 @@
+---
+const reviews = [
+    {
+        stars: 5,
+        text: "Finally found someone who actually fixes mould instead of just painting over it. The thermal imaging showed problems we didn't even know we had. 3 months later — still completely mould-free!",
+        author: "Sarah K.",
+        location: "Chelmsford"
+    },
+    {
+        stars: 5,
+        text: "As a landlord, the Awaab's Law documentation was exactly what I needed. Professional, fast, and the tenants are happy. Worth every penny.",
+        author: "James M.",
+        location: "Romford"
+    },
+    {
+        stars: 5,
+        text: "Quote same day, started work 2 days later. Other companies wanted 2 weeks just for a quote! Installed ventilation system and fixed the root cause. Highly recommend.",
+        author: "Lisa P.",
+        location: "Ilford"
+    },
+    {
+        stars: 5,
+        text: "Had 3 other companies 'fix' our mould problem before. It always came back. MouldBlitz actually diagnosed the condensation issue and installed a PIV system. 6 months later — perfect.",
+        author: "David R.",
+        location: "Basildon"
+    },
+    {
+        stars: 5,
+        text: "The before/after photos and detailed report helped us with our insurance claim. Professional service, no mess, and the 90-day guarantee gave us peace of mind.",
+        author: "Emma T.",
+        location: "Brentwood"
+    },
+    {
+        stars: 5,
+        text: "Fixed price quote over the phone was accurate — no surprise charges. The team was professional, explained everything, and cleaned up perfectly. Will use again for other properties.",
+        author: "Michael S.",
+        location: "Colchester"
+    }
+];
+---
+
+<section id="reviews" class="py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl lg:text-5xl font-black text-gray-900 mb-4">500+ Customer Reviews</h2>
+            <div class="flex items-center justify-center gap-2 mb-2">
+                <span class="text-5xl font-black text-orange-500">4.9</span>
+                <div class="flex text-orange-500 text-2xl">
+                    {'★'.repeat(5)}
+                </div>
+            </div>
+            <p class="text-gray-600">Based on 500+ Google Reviews</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {reviews.map((review, index) => (
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex text-orange-500 text-xl mb-4">
+                        {'★'.repeat(review.stars)}
+                    </div>
+                    <p class="text-gray-700 mb-6 italic leading-relaxed">"{review.text}"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">
+                            {review.author[0]}
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">{review.author}</p>
+                            <p class="text-sm text-gray-500">{review.location}</p>
+                        </div>
+                    </div>
+                </div>
+            ))}
+        </div>
+    </div>
+</section>

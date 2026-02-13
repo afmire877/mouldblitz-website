@@ -1,0 +1,74 @@
+---
+const badList = [
+    "Paint-overs that fail in 3-6 months",
+    "No thermal imaging or diagnostics",
+    "Missing appointments or taking weeks to start",
+    "No insurance or wrong insurance",
+    "No Awaab's Law documentation",
+    "No guarantees (you're on your own)",
+    "Spreading spores during removal",
+    "Going out of business mid-job"
+];
+
+const prices = [
+    {
+        title: "Small Room Treatment",
+        price: "£300 - £600",
+        description: "Single room, surface mould, minor ventilation fix"
+    },
+    {
+        title: "Medium Job",
+        price: "£600 - £1,200",
+        description: "Multiple rooms, MEV installation, replastering"
+    },
+    {
+        title: "Comprehensive Solution",
+        price: "£1,500 - £2,500",
+        description: "Whole property, PIV system, damp-proofing, full remediation"
+    }
+];
+---
+
+<section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-4xl lg:text-5xl font-black text-gray-900 mb-4">What Does It Cost?</h2>
+            <p class="text-xl text-gray-600">We don't compete on price. We compete on quality, speed, and results.</p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12">
+            {/* The Low-Priced Problems */}
+            <div class="bg-red-50 rounded-3xl p-8">
+                <h3 class="text-2xl font-bold text-red-600 mb-6 text-center">LOW-PRICED Services Suffer From:</h3>
+                <ul class="space-y-4">
+                    {badList.map(item => (
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-red-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                            <span class="text-gray-700">{item}</span>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+
+            {/* Our Pricing */}
+            <div class="space-y-6">
+                <h3 class="text-2xl font-bold text-blue-600 text-center mb-6">Our Transparent Pricing:</h3>
+                {prices.map(price => (
+                    <div class="bg-white border-2 border-gray-100 rounded-2xl p-6 hover:border-blue-200 hover:shadow-lg transition-all">
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">{price.title}</h4>
+                        <div class="text-3xl font-black text-green-500 mb-2">{price.price}</div>
+                        <p class="text-gray-600">{price.description}</p>
+                    </div>
+                ))}
+            </div>
+        </div>
+
+        {/* Note */}
+        <div class="mt-12 bg-blue-50 rounded-2xl p-8 text-center">
+            <p class="text-lg text-gray-700 mb-2">
+                <strong>We price everything over the phone</strong> after looking at your property on Google Maps and asking key questions.
+            </p>
+            <p class="text-xl font-bold text-blue-600">During your call we'll give you an exact fixed price. IT'S THAT EASY!</p>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,104 @@
+---
+const phoneNumber = "020 4567 8900";
+const phoneLink = "tel:02045678900";
+---
+
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <!-- Background Image with Overlay -->
+    <div class="absolute inset-0 z-0">
+        <img 
+            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1920&q=80" 
+            alt="Professional mould remediation" 
+            class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-900/95 via-blue-900/85 to-blue-800/70"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <!-- Left Content -->
+            <div class="text-white">
+                <div class="inline-flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wide mb-6">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                    Awaab's Law Compliant
+                </div>
+
+                <h1 class="text-5xl lg:text-7xl font-black leading-tight mb-6">
+                    We <span class="text-orange-400 underline decoration-4 underline-offset-4">BLITZ</span><br/>Mould!
+                </h1>
+
+                <p class="text-xl lg:text-2xl font-semibold mb-8 text-blue-100">
+                    Compliance-Ready Mould Removal in 48 Hours
+                </p>
+
+                <!-- Trust Stats -->
+                <div class="flex flex-wrap gap-8 mb-10">
+                    <div class="text-center">
+                        <div class="text-4xl lg:text-5xl font-black text-green-400">500+</div>
+                        <div class="text-sm text-blue-200">Jobs Completed</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl lg:text-5xl font-black text-green-400">4.9★</div>
+                        <div class="text-sm text-blue-200">Average Rating</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl lg:text-5xl font-black text-green-400">90-Day</div>
+                        <div class="text-sm text-blue-200">Guarantee</div>
+                    </div>
+                </div>
+
+                <!-- CTAs -->
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href={phoneLink} class="inline-flex items-center justify-center gap-3 bg-green-500 hover:bg-green-600 text-white text-lg font-bold px-8 py-4 rounded-xl transition-all hover:-translate-y-1 shadow-2xl hover:shadow-green-500/30">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                        Call Now: {phoneNumber}
+                    </a>
+                    <a href="#contact" class="inline-flex items-center justify-center gap-3 bg-white hover:bg-gray-100 text-blue-900 text-lg font-bold px-8 py-4 rounded-xl transition-all hover:-translate-y-1 shadow-2xl">
+                        Get Free Quote
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </a>
+                </div>
+
+                <p class="mt-6 text-blue-200 flex items-center gap-2 text-sm">
+                    <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                    Same-day quotes • Thermal imaging included • Court-ready reports
+                </p>
+            </div>
+
+            <!-- Right Content - Coupon Cards -->
+            <div class="hidden lg:block space-y-6">
+                <div class="bg-white rounded-2xl p-6 shadow-2xl border-4 border-dashed border-orange-400 transform rotate-2 hover:rotate-0 transition-transform">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"/></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">FREE Thermal Imaging</h3>
+                            <p class="text-gray-500 text-sm">Worth £150</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">Complete moisture mapping & thermal analysis with every quote</p>
+                    <a href="sms:02045678900?&body=Hi%20MouldBlitz,%20I%20want%20the%20FREE%20thermal%20imaging%20survey%20offer!" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-3 rounded-lg transition-colors">
+                        Text to Claim
+                    </a>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-500 to-green-600 rounded-2xl p-6 shadow-2xl text-white transform -rotate-1 hover:rotate-0 transition-transform">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Same-Day Quote</h3>
+                            <p class="text-green-100 text-sm">Call Before 6PM</p>
+                        </div>
+                    </div>
+                    <p class="text-green-100 mb-4">Get your detailed quote within hours, not days</p>
+                    <a href="sms:02045678900?&body=Hi%20MouldBlitz,%20I%20need%20a%20same-day%20quote%20for%20mould%20removal!" class="block w-full bg-white text-green-600 hover:bg-gray-100 text-center font-bold py-3 rounded-lg transition-colors">
+                        Book Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

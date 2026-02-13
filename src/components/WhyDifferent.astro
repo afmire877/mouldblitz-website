@@ -1,0 +1,68 @@
+---
+const differences = [
+    {
+        icon: "🎯",
+        title: "Root Cause Diagnosis",
+        them: "Visual inspection, guesswork",
+        us: "Thermal imaging, moisture mapping, airflow analysis"
+    },
+    {
+        icon: "⚡",
+        title: "Lightning-Fast Response",
+        them: "3-7 day quotes, weeks to start work",
+        us: "Same-day quotes, 48-hour start times"
+    },
+    {
+        icon: "📋",
+        title: "Awaab's Law Documentation",
+        them: "Handwritten notes, no evidence",
+        us: "Court-ready reports with thermal images & before/after photos"
+    },
+    {
+        icon: "✅",
+        title: "90-Day Guarantee",
+        them: "No guarantee, you're on your own",
+        us: "Mould-free or we return free"
+    },
+    {
+        icon: "💷",
+        title: "Fixed Transparent Pricing",
+        them: "Vague estimates, surprise charges",
+        us: "£300-£2,500 fixed quotes, no hidden fees"
+    },
+    {
+        icon: "🔧",
+        title: "Permanent Solutions",
+        them: "Paint-overs that fail in months",
+        us: "Ventilation, insulation, structural fixes"
+    }
+];
+---
+
+<section class="py-24 bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-4xl lg:text-5xl font-black mb-4">Why MouldBlitz Is Different</h2>
+            <p class="text-xl text-gray-400">Most companies paint over mould and hope for the best. We actually fix it.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {differences.map((diff, index) => (
+                <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 group">
+                    <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">{diff.icon}</div>
+                    <h3 class="text-xl font-bold text-green-400 mb-4">{diff.title}</h3>
+                    <div class="space-y-3">
+                        <div>
+                            <p class="text-orange-400 font-semibold text-sm mb-1">Them:</p>
+                            <p class="text-gray-400">{diff.them}</p>
+                        </div>
+                        <div>
+                            <p class="text-green-400 font-semibold text-sm mb-1">Us:</p>
+                            <p class="text-white">{diff.us}</p>
+                        </div>
+                    </div>
+                </div>
+            ))}
+        </div>
+    </div>
+</section>
